@@ -10,8 +10,8 @@ data:
 
     [[runners]]
       name = "gitlab-docker-runner"
-      url = "http://gitlab.gitlab/ci"
-      token = ""
+      url = "https://git.ecommchannels.com/ci"
+      token = "ZLqucKB7AT8bDBBMGdji"
       executor = "docker"
       [runners.docker]
         tls_verify = false
@@ -19,9 +19,3 @@ data:
         privileged = true
         disable_cache = false
         volumes = ["/cache"]
-      [runners.cache]
-        Type = "s3"
-        ServerAddress = "http://minio.gitlab/"
-        AccessKey = ""
-        SecretKey = ""
-        BucketName = "runner"
